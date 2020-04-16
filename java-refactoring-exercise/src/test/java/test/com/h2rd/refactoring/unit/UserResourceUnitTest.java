@@ -30,8 +30,6 @@ public class UserResourceUnitTest {
     @Test
     public void getUsersTest() {
 
-        
-
         Response response = userResource.getUsers();
         Assert.assertEquals(200, response.getStatus());
     }
