@@ -6,13 +6,10 @@ import java.util.Arrays;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.runners.MockitoJUnitRunner;
 
 import com.h2rd.refactoring.usermanagement.User;
 import com.h2rd.refactoring.usermanagement.UserDao;
 
-@RunWith(MockitoJUnitRunner.class)
 public class UserDaoUnitTest {
 
 	UserDao userDao;
