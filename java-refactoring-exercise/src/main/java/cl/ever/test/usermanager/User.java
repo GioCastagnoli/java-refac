@@ -1,4 +1,4 @@
-package com.h2rd.refactoring.usermanagement;
+package cl.ever.test.usermanager;
 
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;

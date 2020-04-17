@@ -1,14 +1,14 @@
-package test.com.h2rd.refactoring.unit;
+package test.cl.ever.test.usermanager.unit;
 
-import com.h2rd.refactoring.usermanagement.User;
-import com.h2rd.refactoring.usermanagement.UserDao;
-import com.h2rd.refactoring.web.UserResource;
-import junit.framework.Assert;
+import javax.ws.rs.core.Response;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import javax.ws.rs.core.Response;
+import cl.ever.test.usermanager.User;
+import cl.ever.test.usermanager.UserDao;
+import cl.ever.test.usermanager.web.UserResource;
+import junit.framework.Assert;
 
 public class UserResourceUnitTest {
 
@@ -17,6 +17,12 @@ public class UserResourceUnitTest {
 
     @Before
     public void before() {
+    	
+    }
+    	
+    
+    @Test
+    public void getUsersTest() {
     	userResource = new UserResource();
         userDao = UserDao.getUserDao();
 
@@ -24,12 +30,6 @@ public class UserResourceUnitTest {
         user.setName("fake user");
         user.setEmail("fake@user.com");
         userDao.saveUser(user);
-    }
-    	
-    
-    @Test
-    public void getUsersTest() {
-
         Response response = userResource.getUsers();
         Assert.assertEquals(200, response.getStatus());
     }

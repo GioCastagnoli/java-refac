@@ -1,4 +1,4 @@
-package test.com.h2rd.refactoring.integration;
+package test.cl.ever.test.usermanager.integration;
 
 import java.util.ArrayList;
 
@@ -8,8 +8,8 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
-import com.h2rd.refactoring.usermanagement.User;
-import com.h2rd.refactoring.web.UserResource;
+import cl.ever.test.usermanager.User;
+import cl.ever.test.usermanager.web.UserResource;
 
 public class UserIntegrationTest {
 	

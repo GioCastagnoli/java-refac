@@ -1,7 +1,4 @@
-package com.h2rd.refactoring.web;
-
-import com.h2rd.refactoring.usermanagement.User;
-import com.h2rd.refactoring.usermanagement.UserDao;
+package cl.ever.test.usermanager.web;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.GenericEntity;
@@ -10,6 +7,9 @@ import javax.ws.rs.core.Response;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Repository;
+
+import cl.ever.test.usermanager.User;
+import cl.ever.test.usermanager.UserDao;
 
 import java.util.ArrayList;
 import java.util.List;

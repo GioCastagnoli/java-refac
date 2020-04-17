@@ -1,4 +1,4 @@
-package com.h2rd.refactoring.usermanagement;
+package cl.ever.test.usermanager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,11 +42,13 @@ public class UserDao {
     public void deleteUser(User userToDelete) {
     	logger.info("deleteUser");
         try {
-            for (User user : users) {
-                if (user.getName() == userToDelete.getName()) {
-                    users.remove(user);
-                }
-            }
+            if (users != null) {
+				for (User user : users) {
+					if (user.getName().equals(userToDelete.getName())) {
+						users.remove(user);
+					}
+				} 
+			}
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -56,7 +58,7 @@ public class UserDao {
     	logger.info("updateUser");
         try {
             for (User user : users) {
-                if (user.getName() == userToUpdate.getName()) {
+                if (user.getName().equals(userToUpdate.getName())) {
                     user.setEmail(userToUpdate.getEmail());
                     user.setRoles(userToUpdate.getRoles());
                 }

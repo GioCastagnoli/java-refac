@@ -1,4 +1,4 @@
-package test.com.h2rd.refactoring.unit;
+package test.cl.ever.test.usermanager.unit;
 
 import static org.junit.Assert.assertTrue;
 
@@ -7,8 +7,8 @@ import java.util.Arrays;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.h2rd.refactoring.usermanagement.User;
-import com.h2rd.refactoring.usermanagement.UserDao;
+import cl.ever.test.usermanager.User;
+import cl.ever.test.usermanager.UserDao;
 
 public class UserDaoUnitTest {
 
